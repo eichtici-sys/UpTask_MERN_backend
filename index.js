@@ -14,7 +14,7 @@ dotenv.config();
 conectarBD();
 
 //Configurar Cors
-const whiteList = [process.env.FRONTEND_URL1, process.env.FRONTEND_URL2];
+const whiteList = [process.env.FRONTEND_URL];
 
 const corsOptions = {
   origin: function (origin, callback) {
@@ -48,7 +48,7 @@ import { Server } from "socket.io";
 const io = new Server(servidor, {
   pingTimeout: 60000,
   cors: {
-    origin: process.env.FRONTEND_URL2,
+    origin: process.env.FRONTEND_URL,
   },
 });
 

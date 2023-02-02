@@ -19,7 +19,7 @@ export const emailRegistro = async (datos) => {
     text: "Comprueba tu cuenta en Uptask",
     html: `<p>Hola: ${nombre} Comprueba tu cuenta en Uptask</p>
     <p>Tu cuenta ya esta casi lista, solo debes comprobarla en el siguiente enlace: 
-        <a href="${process.env.FRONTEND_URL1}/confirmar/${token}"> Comprobar Cuenta</a>
+        <a href="${process.env.FRONTEND_URL}/confirmar/${token}"> Comprobar Cuenta</a>
     </p>
     <p>Si tu no creaste esta cuenta, puedes ignorar el mensaje.</p>
     `,
@@ -46,7 +46,7 @@ export const emailOlvidePassword = async (datos) => {
     text: "Comprueba tu cuenta en Uptask",
     html: `<p>Hola: ${nombre} has solicitado reestablecer tu contraseñak</p>
     <p>Dale click al siguiente enlace para generar una nueva contraseña: 
-        <a href="${process.env.FRONTEND_URL1}/olvide-password/${token}"> Reestablecer contraseña</a>
+        <a href="${process.env.FRONTEND_URL}/olvide-password/${token}"> Reestablecer contraseña</a>
     </p>
     <p>Si tu no solicitaste reestablecer tu contraseña, puedes ignorar el mensaje.</p>
     `,
